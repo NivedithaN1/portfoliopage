@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+    var no ="n";
+    let form=prompt(`Did you fill the form (y/n) ?`);
+    if(form=="n")
+    {
+      alert(`Please fill the form!`);
+    }else
+    {
+      alert("Glad to know!")
+    }
+    
+    </script>
+</head>
+
+<body>
+        <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#loc">Interests and Location area</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </nav>
+
+        <section id="home">
+        
+        <h1 class="heading">K &nbsp;NIVEDITHA &nbsp;KAMATH</h1>
+        <br><br>
+        <p style="font-size: 30px">ANDROID AND WEB&nbsp; DEVELOPER</p>
+        </section>
+
+        <section id="about">
+        <h1 class="heading">About</h1>
+        <hr class="lines">
+        <div class="about">
+            <img src="pro.jpg" alt="My Pic">
+            <div class="name">
+                <h2>Hey there, this is Niveditha!</h2>
+                <p>I'm currently in 4th year of my engineering pursuing Computer Science as a field of interest in Shri Madhwa Vadiraja Institute of Technology and Management, Udupi. I look forward to learn new things, take up new courses and implement it in my professional career. I am willing to earn a challenging position in the developing field so that I can expand and utilize my knowledge. Presently I have taken a internship course in a campany named <a href="https://www.tequedlabs.com/">Tequed Labs</a> with full stack web development as my course study.</p>
+            </div>
+        </div>
+       </section>
+
+    <section id="loc">
+        <h1 class="heading">Interests&nbsp;&&nbsp;Area of Location</h1>
+        <hr class="liner">
+     <div class="columns1">
+       
+        <div class="box1">
+             
+             <iframe width="500" height="315" src="https://www.youtube.com/embed/BQRuM4poEQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <h3>Ulidavaru Kandanthe by Rakshith</h3>
+        </div>
+
+        <div class="box1">
+            
+             <img src="sktech.jpg" width="500" height="315" alt="Sketching Potraits">
+              <h3>Sketching Potraits</h3>
+        </div>
+
+        <div class="box1">
+             
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62116.748385572086!2d74.71207149795924!3d13.331806198689685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbcbb69938f41cf%3A0xcccc99e431850143!2sUdupi%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1630917863387!5m2!1sen!2sin" width="500" height="315" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+             <h3>My Location Area</h3>
+             
+        </div>
+
+        <div class="box1">
+        <div class="audios">
+            
+             <audio controls="300">
+                    <source src="Cheap Thrills.mp3" type="audio/mp3">
+             </audio>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <h3>Cheap Thrills by Sia Furlert</h3>
+                
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="heading">Contact Me<br>for more details by filling the form</h1>
+
+        <form action="/sign" method="POST" class="form">
+            <input type="text" name="fname" class="input" placeholder="Enter Your First Name">
+            <input type="text" name="lname" class="input" placeholder="Enter Your Last Name">
+            <input type="email" name="email" class="input" placeholder="Enter Your Email">
+            <input type="text" name="age" class="input" placeholder="Enter Your Age">
+            <label for="gender"><h4>Gender:</h4></label>
+
+            <label for="gender"><h4>Female</h4></label>
+            <input type="radio" name="gender" value="female" required>
+
+            <label for="gender"><h4>Male</h4></label>
+            <input type="radio" name="gender" value="male" required>
+
+             <label for="gender"><h4>Others</h4></label>
+            <input type="radio" name="gender" value="others" required>
+
+            <textarea name="message" id="message" cols="80" rows="15" placeholder="Enter Your Message"></textarea>
+
+            <label for="checkbox"><h4>I agree to proceed!</h4></label>
+            <input type="checkbox" name="agree" required>
+
+            <button type="submit" id="submit">Submit</button>
+
+            <h3> Designed by &nbsp; K NIVEDITHA KAMATH</h3>
+        </form>
+        <aside>
+            <div class="box2">
+                     <p>You can also contact me through:</p>
+    
+                    <p><i class="fa fa-envelope"></i>&nbsp;91+ 9034152381 </p>
+                    <p><i class="fa fa-envelope"></i>&nbsp;knivedithakamath@gmail.com</p>
+            </div>
+        </aside>
+    </section>
+    
+</body>
+</html>
